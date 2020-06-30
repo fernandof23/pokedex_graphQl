@@ -12,7 +12,7 @@
 
 Foi feito o deploy dessa aplicação no [NetliFy](https://www.netlify.com/)
 
-Para acessar essa aplicação ONLINE, use o link -> [PokeDex](https://www.netlify.com/)
+Para acessar essa aplicação ONLINE, use o link -> [PokeDex](https://pokedexgraphql.netlify.app/)
 
 
 
