@@ -1,6 +1,17 @@
-#containerDetails{
-  position: fixed;
+
+@media (max-width:800px){
+  #containerDetails{
+    position:absolute;
+  }
 }
+
+@media(min-width:800px){
+  #containerDetails{
+    position: fixed;
+  }
+  
+}
+
 
 body #pokemon{
   margin-bottom: 25px;
