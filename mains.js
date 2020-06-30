@@ -101,7 +101,7 @@ function handleAllPokemons(pokemons) {
 
   pokemons.forEach(poke => {
     template += `
-    <li class="media">
+    <li class="media" id="pokemon">
       <img class="mr-3" width="100" src="${poke.image}">
       <div class="media-body">
         <h5>${poke.name}</h5>
