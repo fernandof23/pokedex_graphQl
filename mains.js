@@ -3,10 +3,10 @@ const pokemonDetails = document.querySelector('#details')
 
 
 
-function main(limit) {
+function main(limit = 5) {
   const pokemons = `
   {
-    pokemons(first:10){
+    pokemons(first:${limit}){
       id
       name
       classification
@@ -115,7 +115,10 @@ function handleAllPokemons(pokemons) {
   listPokemons.innerHTML = `
   <ul class="list-unstyled">
     ${template}
-  </ul>`
+  </ul>
+  <button class="btn btn-block btn-info" onClick="main(${pokemons.length + 5})">mais...</button>
+  `
+
 }
 
 
