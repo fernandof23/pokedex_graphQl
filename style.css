@@ -8,6 +8,7 @@
 @media(min-width:800px){
   #containerDetails{
     position: fixed;
+  
   }
   
 }
@@ -17,4 +18,17 @@ body #pokemon{
   margin-bottom: 25px;
   padding-bottom:15px;
   border-bottom:1px solid #ddd;
+}
+
+#header{
+  display: flex;
+  padding:20px;
+  margin-bottom: 30px;
+  background-color:#fff !important;
+
+  justify-content: center;  
+}
+
+#header img {
+  margin-right:10px;
 }

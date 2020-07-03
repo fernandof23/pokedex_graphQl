@@ -1,5 +1,6 @@
 const listPokemons = document.querySelector('#pokemons')
 const pokemonDetails = document.querySelector('#details')
+const pokemonHeader = document.querySelector('#header')
 
 
 
@@ -51,8 +52,8 @@ function getOnePokemon(id) {
 function handleOnePokemon(pokemon) {
 
   let template = `
-    <div class="card">
-      <img class="card-img-top" src="${pokemon.image}"/>
+    <div class="card" style="display: flex; align-items: center; justify-content: center;" >
+      <img class="card-img-top" src="${pokemon.image}" style="width:200px"/>
       <div class="card-body">
         <h5 class="card-title">${pokemon.name}</h5>
       <div>
@@ -90,6 +91,17 @@ function handleOnePokemon(pokemon) {
       </ul>
     </div>
   `;
+
+
+  const header = `
+  <a class="navbar-brand" href="#">
+    <img src="${pokemon.image}" width="30" height="30" alt="" loading="lazy">
+    ${pokemon.name}
+  </a>
+  
+  `
+
+  pokemonHeader.innerHTML = header
 
   pokemonDetails.innerHTML = template
 
